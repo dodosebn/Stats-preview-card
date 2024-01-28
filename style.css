@@ -1,0 +1,164 @@
+@import url("https://fonts.google.com/specimen/Inter");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root {
+  /* Main colors */
+  --primary-1: hsl(233, 47%, 7%);
+  --primary-2: hsl(244, 38%, 16%);
+  --primary-3: hsl(277, 64%, 61%);
+  /* Neutrals */
+  --neutral-1: hsl(0, 0%, 100%);
+  --neutral-2:hsla(0, 0%, 100%, 0.75);
+  --neutral-3:hsla(0, 0%, 100%, 0.6);
+}
+body{
+    background-color: var(--primary-1);
+}
+@media (min-width: 400px) {
+.entire-cont{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 6em;
+} 
+ .entire-hold{
+    background-color: var(--primary-2);
+    height: 70%;
+    width: 70%;
+    padding: 0.6em;
+    border-radius: 5px;
+    background-image: linear-gradient(var(--primary-2), var(--primary-2)), url("images/image-header-desktop.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: calc(29em);
+    background-blend-mode: color-dodge;
+
+}
+.writing-cont, .writing-hold{
+    font-family: "Inter", "Lexend Deca", sans-serif;
+    padding-top: 1em;
+    padding-left: 1.2em;
+}
+.writing-hold h1{
+    color: var(--neutral-1);
+    font-weight: 700;
+    font-size: 2em;
+    width: 12em;
+}
+.writing-hold h1 span{
+    color: var(--primary-3);
+}
+.discover{
+    margin-top: 2em;
+}
+.discover p{
+    color: var(--neutral-3);
+    width: 22em;
+font-size: 14px;
+line-height: 1.5;
+}
+.reviews, .acheive-all{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding: 2em;
+   
+}
+.acheive-all{
+    padding-left: 10em;
+}
+.acheive2, .acheive3{
+    padding-left: 4.2em;
+}
+.acheive1 h3,.acheive2 h3,.acheive3 h3{
+    color: var(--neutral-1);
+}
+.acheive1 p,.acheive2 p,.acheive3 p{
+    color: var(--neutral-3); 
+    font-size: 11px;
+}
+}
+/* image- */
+@media (max-width: 400px) {
+    .entire-cont{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-top: 4em;
+    }
+    .entire-hold{
+        background-color: var(--primary-2);
+       /*  width: 70%; */
+       height: 48em;
+        padding: 10em;
+        border-radius: 5px;
+        background-image: linear-gradient(var(--primary-2), var(--primary-2)), url("images/image-header-desktop.jpg");
+        /* background-position: top; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-blend-mode: color-dodge;
+    }
+    .writing-cont{
+        position: relative;
+        background-color: var(--primary-2);
+    }
+     .writing-hold{
+        font-family: "Inter", "Lexend Deca", sans-serif;
+      
+        /* padding-top: 1em; */
+        top: 9em;
+        position: absolute;
+      right: -7em;
+   
+    }
+    .writing-hold h1{
+        color: var(--neutral-1);
+        font-weight: 700;
+        font-size: 1.5em;
+        width: 10em;
+        text-align: center;
+        text-align-last: center;
+    }
+    .writing-hold h1 span{
+        color: var(--primary-3);
+    }
+    .discover{
+        margin-top: 2em;
+        position: absolute;
+        left: -0.3em;
+    }
+    .discover p{
+        color: var(--neutral-2);
+        width: 16em;
+    font-size: 16px;
+   text-align: center;
+    text-align-last: center;
+    line-height: 1.5;
+    }
+    .reviews{
+        position: relative;
+    }
+     .acheive-all{
+        position: absolute;
+       top: 7em;
+        width: 20%;
+       padding: 4em;
+       left: 2em;
+      text-align: center;
+    }
+    .acheive2, .acheive3{
+        padding-top: 2em;
+    }
+    .acheive1 h3,.acheive2 h3,.acheive3 h3{
+        color: var(--neutral-1);
+    }
+    .acheive1 p,.acheive2 p,.acheive3 p{
+        color: var(--neutral-3); 
+        font-size: 11px;
+    } 
+}
